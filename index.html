@@ -1,1 +1,477 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>My Profile</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            .header {
+                box-shadow: 0px 1px 4px gray;
+                position: fixed;
+                z-index: 500;
+                padding-left: 5%;
+                text-shadow: 0px 0px 3px white;
+            }
+            .header h1 {
+                margin: 5px 0px 2px;
+            }
+            .content {
+                padding-left: 20%;
+            }
+            .section-nav {
+                top: 80px;
+                cursor: pointer;
+                font-size: 1.05rem;
+            }
+            .section-nav li {
+                margin: 5px 0px;
+            }
+            .section-nav a {
+                padding: 5px 0px 5px 20px;
+                color: gray;
+            }
+            .section-nav a:hover {
+                color: skyblue;
+                font-weight: bold;
+                border-left: 2px solid skyblue;
+                padding-left: 18px;
+            }
+            .indent-p p {
+                text-indent: 1cm;
+            }
+            #showThis {
+                display:none;
+                position:fixed;
+                margin:auto;
+                top:100px;
+                width:70%;
+                height:70%;
+                top:15%;
+                left:15%;
+                z-index:100;
+                overflow:auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid bg-info header">
+            <h1>MY PROFILE</h1>
+        </div>
+        <div class="container-fluid bg-primary p-3 pt-5" id="profile">
+            <img src="src/1647916154557.jpg" alt="my face" class="rounded-circle img-thumbnail mx-auto d-block mb-3 mt-5" width="200px" height="200px">
+            <p class="text-center h1">
+                Rommel U. Minguez<br/>
+                <span class="h6">BSIT-2B</span>
+            </p>
+        </div>
+        <div class="row bg-light">
+            <div class="content col-9 py-5 pe-5">
+                <article class="indent-p">
+                    <h2  id="about-me">About Me:</h2> 
+                    <p>
+                        I'm just a regular guy, who want to be a good game developer, 
+                        but don't have any talent nor skill.
+                        I do want to believe that talent and skill is acquired through experience and 
+                        determination to train and practice everyday, but deep down I know that some
+                        people are born with talent and skill which they got unintentionaly or intentionaly 
+                        by their everyday life or determination to pratice and train, which I don't have.
+                        I was born with no talent and don't have enough determination to master any skill,
+                        yeah, I'm to lazy, why the hell am I to lazy? to many distraction, Procrastination 
+                        might be my innate talent. <br>
+                    </p>
+                    <p>
+                        Game Development is just too hard, learning the neccessary programming is one thing,
+                        I also need to create assets, 3D/2D models, arts, and music for bgm and sfx. creating music 
+                        is just too hard for me, but even after all of that I still want to make my own game, 
+                        even with my shallow knowledge, just like my favorite japanese proverb said 
+                        <mark><q><i>Even dust, if pilled up, will become a mountain.</i></q></mark> means even 
+                        small efforts, if repeated for a long time became a too huge to ignore. let's just 
+                        hope that our dust effort will become a mountain before it's too late.
+                    </p>
+                </article> <hr class="my-5">
+                
+                <article class="indent-p">
+                    <h2 id="hobby">Hobbies:</h2>
+                    <p>
+                        All of my hobbies are indoor because I'm a introvert person except for one, which is riding bicycle, this is the only one 
+                        outdoor hobby I have, I just like how portable the bicycle is and there is nothing 
+                        that block your vision from the surrondings when riding bike, also a good exercise 
+                        from time to time. And my other hobbies which is all indoor are:
+                    </p>
+                    <dl>
+                        <dt>Favorite Music</dt>
+                        <dd>
+                            <p>
+                                Who doesn't like to listen to music right!, as for me my favorite is
+                                <q>In The End</q> by linkin Park.
+                            </p>
+                            <div class="text-center">
+                                <iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" 
+                                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/112774699&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+                                </iframe>
+                                <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: 
+                                    normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; 
+                                    font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                                    <a href="https://soundcloud.com/marko-stipi" title="ALLMusic" target="_blank" style="color: #cccccc; text-decoration: none;">ALLMusic</a> · 
+                                    <a href="https://soundcloud.com/marko-stipi/linkin-park-in-the-end" title="Linkin Park - In The End" target="_blank" style="color: #cccccc; text-decoration: none;">Linkin Park - In The End</a>
+                                </div>
+                            </div>
+                        </dd>
+                        <dt>Favorite Manga</dt>
+                        <dd>
+                            <p>
+                                Manga is basically a comics, an eastern comics. I have already read a lot of Manga,
+                                Manhua, & Manhwa. I have more than one favorite but for me amongs my favorites the 
+                                best 3 are: 
+                            </p>
+                            <div class="row">
+                                <div class="col text-center">
+                                    <a href="https://myanimelist.net/manga/78537/Karakai_Jouzu_no_Takagi-san" target="_blank" title="click to learn more">
+                                        <img src="https://cdn.myanimelist.net/images/manga/3/136045.jpg" alt="Takagi-san Cover" class="rounded d-block mx-auto" width="225" height="300">
+                                    </a>
+                                    <span class="d-block my-2">Karakai Jouzu no Takagi-san</span>
+                                    <span>Teasing Master Takagi-san</span>
+                                </div>
+                                <div class="col text-center">
+                                    <a href="https://myanimelist.net/manga/87609/Tensei_shitara_Slime_Datta_Ken" target="_blank" title="click to learn more">
+                                        <img src="https://cdn.myanimelist.net/images/manga/3/167639.jpg" alt="TenSura Cover" class="rounded d-block mx-auto" width="225" height="300">
+                                    </a>
+                                    <span class="d-block my-2">Tensei shitara Slime Datta Ken</span>
+                                    <span>That Time I Got Reincarnated as a Slime</span>
+                                </div>
+                                <div class="col text-center">
+                                    <a href="https://myanimelist.net/manga/90125/Kaguya-sama_wa_Kokurasetai__Tensai-tachi_no_Renai_Zunousen" target="_blank" title="click to learn more">
+                                        <img src="https://cdn.myanimelist.net/images/manga/3/188896.jpg" alt="kaguya-sama Cover" class="rounded d-block mx-auto" width="225" height="300">
+                                    </a>
+                                    <span class="d-block my-2">Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen</span>
+                                    <span>Kaguya-sama: Love is War</span>
+                                </div>
+                            </div>
+                        </dd>
+                        <dt>Favorite Anime</dt>
+                        <dd>
+                            <p>
+                                If there's a favorite manga, of course there is also favorite anime and this are my Top 
+                                3 in all the series I watch:
+                            </p>
+                            <div class="row">
+                                <div class="col text-center">
+                                    <a href="https://myanimelist.net/anime/11061/Hunter_x_Hunter_2011" target="_blank" title="click to learn more">
+                                        <img src="https://cdn.myanimelist.net/images/anime/1337/99013.jpg" alt="Hunter x Hunter Cover" class="rounded d-block mx-auto" width="225" height="300">
+                                    </a>
+                                    <span class="d-block my-2">Hunter x Hunter (2011)</span>
+                                </div>
+                                <div class="col text-center">
+                                    <a href="https://myanimelist.net/anime/7791/K-On" target="_blank" title="click to learn more">
+                                        <img src="https://cdn.myanimelist.net/images/anime/12/76121.jpg" alt="K-On! Cover" class="rounded d-block mx-auto" width="225" height="300">
+                                    </a>
+                                    <span class="d-block my-2">K-On!</span>
+                                </div>
+                                <div class="col text-center">
+                                    <a href="https://myanimelist.net/anime/37675/Overlord_III" target="_blank" title="click to learn more">
+                                        <img src="https://cdn.myanimelist.net/images/anime/1511/93473.jpg" alt="Overlord Cover" class="rounded d-block mx-auto" width="225" height="300">
+                                    </a>
+                                    <span class="d-block my-2">Overlord</span>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </article> <hr class="my-5">
+
+                <article>
+                    <h2 id="education">Education:</h2>
+                    <div class="table-responsive">
+                        <table class="table table-info table-hover align-middle">
+                            <thead>
+                                <tr class="table-primary">
+                                    <th scope="col">Level</th>
+                                    <th scope="col">School Name</th>
+                                    <th scope="col">Grade/Year Level Attended</th>
+                                    <th scope="col">Course</th>
+                                    <th scope="col">College Degree</th>
+                                    <th scope="col">Year Enrolled</th>
+                                    <th scope="col">Year Graduated</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                                <tr>
+                                    <th scope="row">Elementary</th>
+                                    <td>Vicente N. Chaves Memorial Central School (V.N.C.M.C.S.)</td>
+                                    <td>1 - 6</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>2007</td>
+                                    <td>2014</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Junior High</th>
+                                    <td>Villanueva National High School (V.N.H.S.)</td>
+                                    <td>7 - 10</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>2014</td>
+                                    <td>2018</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Senior High</th>
+                                    <td>Cagayan de Oro College (C.O.C.)</td>
+                                    <td>11 - 12</td>
+                                    <td>General Academic Strand - Criminology (GAS-CRIM)</td>
+                                    <td></td>
+                                    <td>2018</td>
+                                    <td>2020</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">College</th>
+                                    <td>Tagoloan Community College (T.C.C.)</td>
+                                    <td>1 - ongoing...</td>
+                                    <td>Bachelor of Science in Information Technology (BSIT)</td>
+                                    <td>Bachelor's Degree</td>
+                                    <td>2021</td>
+                                    <td>ongoing...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article> <hr class="my-5">
+
+                <article class="indent-p">
+                    <h2 id="skill">Skills:</h2>
+                    <div class="card mb-3">
+                        <div class="row g-1">
+                            <div class="col-md-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="img-fluid rounded-start py-3 px-5">
+                                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/>
+                                </svg>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">HTML Fundamentals</h5>
+                                    <p class="card-text">
+                                        The HyperText Markup Language or 
+                                        HTML is the standard markup language for documents designed to be displayed in a web browser. 
+                                    </p>
+                                    <div class="text-center mt-4">
+                                        <button type="button" class="btn btn-sm btn-primary" id="open-cer" onclick="show(0)">Open Certificate</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="row g-1">
+                            <div class="col-md-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="img-fluid rounded-start py-3 px-5">
+                                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/>
+                                </svg>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">CSS</h5>
+                                    <p class="card-text">
+                                        Cascading Style Sheets is a style sheet language used for describing the presentation 
+                                        of a document written in a markup language such as HTML or XML.
+                                    </p>
+                                    <div class="text-center mt-4">
+                                        <button type="button" class="btn btn-sm btn-primary" id="open-cer" onclick="show(1)">Open Certificate</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="row g-1">
+                            <div class="col-md-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="img-fluid rounded-start py-3 px-5">
+                                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"/>
+                                </svg>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Vanilla JS</h5>
+                                    <p class="card-text">
+                                        JavaScript, often abbreviated as JS, is a programming language that is one of the core 
+                                        technologies of the World Wide Web, alongside HTML and CSS.
+                                    </p>
+                                    <div class="text-center mt-4">
+                                        <button type="button" class="btn btn-sm btn-primary" id="open-cer" onclick="show(2)">Open Certificate</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="row g-1">
+                            <div class="col-md-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="img-fluid rounded-start py-3 px-5">
+                                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M277.74 312.9c9.8-6.7 23.4-12.5 23.4-12.5s-38.7 7-77.2 10.2c-47.1 3.9-97.7 4.7-123.1 1.3-60.1-8 33-30.1 33-30.1s-36.1-2.4-80.6 19c-52.5 25.4 130 37 224.5 12.1zm-85.4-32.1c-19-42.7-83.1-80.2 0-145.8C296 53.2 242.84 0 242.84 0c21.5 84.5-75.6 110.1-110.7 162.6-23.9 35.9 11.7 74.4 60.2 118.2zm114.6-176.2c.1 0-175.2 43.8-91.5 140.2 24.7 28.4-6.5 54-6.5 54s62.7-32.4 33.9-72.9c-26.9-37.8-47.5-56.6 64.1-121.3zm-6.1 270.5a12.19 12.19 0 0 1-2 2.6c128.3-33.7 81.1-118.9 19.8-97.3a17.33 17.33 0 0 0-8.2 6.3 70.45 70.45 0 0 1 11-3c31-6.5 75.5 41.5-20.6 91.4zM348 437.4s14.5 11.9-15.9 21.2c-57.9 17.5-240.8 22.8-291.6.7-18.3-7.9 16-19 26.8-21.3 11.2-2.4 17.7-2 17.7-2-20.3-14.3-131.3 28.1-56.4 40.2C232.84 509.4 401 461.3 348 437.4zM124.44 396c-78.7 22 47.9 67.4 148.1 24.5a185.89 185.89 0 0 1-28.2-13.8c-44.7 8.5-65.4 9.1-106 4.5-33.5-3.8-13.9-15.2-13.9-15.2zm179.8 97.2c-78.7 14.8-175.8 13.1-233.3 3.6 0-.1 11.8 9.7 72.4 13.6 92.2 5.9 233.8-3.3 237.1-46.9 0 0-6.4 16.5-76.2 29.7zM260.64 353c-59.2 11.4-93.5 11.1-136.8 6.6-33.5-3.5-11.6-19.7-11.6-19.7-86.8 28.8 48.2 61.4 169.5 25.9a60.37 60.37 0 0 1-21.1-12.8z"/>
+                                </svg>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Basic level of Java</h5>
+                                    <p class="card-text">
+                                        Java is a high-level, class-based, object-oriented programming language 
+                                        that is designed to have as few implementation dependencies as possible.
+                                    </p>
+                                    <div class="text-center mt-4">
+                                        <button type="button" class="btn btn-sm btn-primary" id="open-cer" onclick="show(3)">Open Certificate</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="row g-5">
+                            <div class="col-md-3">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Y8wXRoEcwXqMuYND9FXg3H-tfZJfN4nOc5n8BOK0&s" class="img-fluid rounded-start py-3 ps-5" alt="C# logo">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Basic level of C#</h5>
+                                    <p class="card-text">
+                                        C# is a general-purpose, high-level multi-paradigm programming language.
+                                    </p>
+                                    <div class="text-center mt-4">
+                                        <button type="button" class="btn btn-sm btn-primary" id="open-cer" onclick="show(4)">Open Certificate</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article> <hr class="my-5">
+
+                <article>
+                    <h2 id="contact">Contacts:</h2>
+                    <div class="row g-5 px-5">
+                        <div class="col-3 p-5">
+                            <a href="https://web.facebook.com/rommel.minguez" target="_blank" title="facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="min-width:50px;min-height:50px;">
+                                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="col-3 p-5">
+                            <a href="https://twitter.com/RMingzx" target="_blank" title="twitter">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="min-width:50px;min-height:50px;">
+                                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="col-3 p-5">
+                            <a href="https://github.com/RommelMinguez" target="_blank" title="github">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" style="min-width:50px;min-height:50px;">
+                                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="col-3 p-5">
+                            <a href="https://myanimelist.net/profile/MingZx_mal" target="_blank" title="mal">
+                                <img src="https://image.myanimelist.net/ui/OK6W_koKDTOqqqLDbIoPAiC8a86sHufn_jOI-JGtoCQ" class="img-fluid" style="min-width:50px;min-height:50px;">
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-3 mt-5" style="z-index:50;">
+                <nav class="section-nav sticky-top">
+                    <ul class="list-unstyled">
+                        <li><a href="#about-me" class="text-decoration-none">About Me</a></li>
+                        <li><a href="#hobby" class="text-decoration-none">Hobbies</a></li>
+                        <li><a href="#education" class="text-decoration-none">Education</a></li>
+                        <li><a href="#skill" class="text-decoration-none">Skills</a></li>
+                        <li><a href="#contact" class="text-decoration-none">Contacts</a></li>
+                        <li><a href="#other" class="text-decoration-none">Other</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <footer class="container-fluid px-5 text-bg-dark" id="other">
+            <p class="text-center">
+                <a href="#profile" class="btn btn-light mt-4"><b>Back to Top</b></a>
+            </p><hr>
+            <p class="text-center">
+                <i>Submitted By:</i><br><b>Minguez, Rommel U.</b><br/><br/>
+                <i>Submitted To:</i><br><b>Sir Gabriel Casiño</b><br>
+            </p><hr/>
+            <p>
+                This project is created for IT-107 activity assignment, using Bootstrap 5 Frameworks.<br/>
+                <h4>Reference:</h4>
+                <ul style="font-size:.75rem;">
+                    <li>
+                        <a href="https://getbootstrap.com/" target="_blank">Bootstrap 5</a> - 
+                        Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass,
+                        utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.
+                    </li>
+                    <li>
+                        <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> - 
+                        Font Awesome is the Internet's icon library and toolkit, used by millions of designers, 
+                        developers, and content creators.
+                    </li>
+                    <li>
+                        <a href="https://www.sololearn.com/home" target="_blank">Sololearn</a> - 
+                        Courses designed by experts with real-world practice.
+                    </li>
+                    <li>
+                        <a href="https://soundcloud.com/" target="_blank">Sound Cloud</a> - 
+                        Discover, stream, and share a constantly expanding mix of music from emerging and major 
+                        artists around the world.
+                    </li>
+                    <li>
+                        <a href="https://myanimelist.net/" target="_blank">MyAnimeList</a> - 
+                        MyAnimeList, often abbreviated as MAL, is an anime and manga social networking and social 
+                        cataloging application website run by volunteers. 
+                        The site provides its users with a list-like system to organize and score anime and manga.
+                    </li>
+                </ul>
+            </p><hr style="margin-bottom:0px;">
+            <p style="color:grey;text-align:right;font-size:10px;" class="pb-2">2nd-year 1st-Semester, s.y. 2022 - 2023</p>
+        </footer>
+
+        <div class="alert alert-info alert-dismissible p-5" id="showThis">
+            <button type="button" class="btn-close"></button>
+            <p>
+                <b>This is certificate doesn't have any real value, it can't be use as a proof for any job requirements. <br>
+                It might have no real value but for me, this is an achievement, a checkpoint, a proof for my self 
+                that there are progress on what I do. In short for me this certificate is like a game achievement.</b>
+            </p>
+            <img src="https://www.sololearn.com/Certificate/CT-0CPERQ06/png" id="cer" class="img-fluid rounded border border-dark border-2 mt-3">
+        </div>
+
+        <script>
+            var inp = document.getElementById("open-cer");
+            var win = document.getElementById("showThis");
+            var pic = document.getElementById("cer");
+
+            //inp.addEventListener("click", show);
+            win.addEventListener("click", hide);
+
+            var cerArr = [
+                "https://www.sololearn.com/Certificate/CT-0CPERQ06/png", 
+                "https://www.sololearn.com/Certificate/CT-FO2LFDE3/png",
+                "https://www.sololearn.com/Certificate/CT-W5KYVFGD/png",
+                "https://www.sololearn.com/Certificate/CT-CNHK5W1R/png",
+                "https://www.sololearn.com/Certificate/CT-MWZWPDJI/png"
+            ];
+            
+            function show(i) {
+                win.style.display = "block";
+                win.style.opacity = "0.95";
+                pic.title = "Sololearn Certificate";
+                pic.src = cerArr[i];
+            }
+
+            function hide() {
+                win.style.display = "none";
+            }
+        </script>
+    </body>
+</html>
