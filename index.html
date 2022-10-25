@@ -6,23 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
         <style>
-            .header {
-                box-shadow: 0px 1px 4px gray;
-                position: fixed;
-                z-index: 500;
-                padding-left: 5%;
-                text-shadow: 0px 0px 3px white;
-            }
-            .header h1 {
-                margin: 5px 0px 2px;
-            }
             .content {
-                padding-left: 20%;
+                padding-left: 10%;
             }
             .section-nav {
                 top: 80px;
                 cursor: pointer;
-                font-size: 1.05rem;
             }
             .section-nav li {
                 margin: 5px 0px;
@@ -40,6 +29,15 @@
             .indent-p p {
                 text-indent: 1cm;
             }
+            .icon {
+                min-width: 100px;
+                min-height: 100px;
+                max-width: 200px;
+                max-height: 200px;
+            }
+            #profile {
+                box-shadow: 0px 2px 5px gray;
+            }
             #showThis {
                 display:none;
                 position:fixed;
@@ -52,21 +50,22 @@
                 z-index:100;
                 overflow:auto;
             }
+            footer {
+                box-shadow: 0px -2px 5px gray;
+            }
         </style>
     </head>
     <body>
-        <div class="container-fluid bg-info header">
-            <h1>MY PROFILE</h1>
-        </div>
-        <div class="container-fluid bg-primary p-3 pt-5" id="profile">
-            <img src="pic/1647916154557.jpg" alt="my face" class="rounded-circle img-thumbnail mx-auto d-block mb-3 mt-5" width="200px" height="200px">
+        <div class="container-fluid text-bg-primary py-3 pt-2 " id="profile">
+                <h1>MY PROFILE</h1>
+            <img src="pic/1647916154557.jpg" alt="my face" class="rounded-circle img-thumbnail mx-auto d-block mb-3 mt-2" width="200px" height="200px">
             <p class="text-center h1">
                 Rommel U. Minguez<br/>
                 <span class="h6">BSIT-2B</span>
             </p>
         </div>
-        <div class="row bg-light">
-            <div class="content col-9 py-5 pe-5">
+        <div class="row">
+            <div class="content col-9 py-5 pe-2">
                 <article class="indent-p">
                     <h2  id="about-me">About Me:</h2> 
                     <p>
@@ -106,7 +105,7 @@
                                 Who doesn't like to listen to music right!, as for me my favorite is
                                 <q>In The End</q> by linkin Park.
                             </p>
-                            <div class="text-center">
+                            <div class="text-center"> 
                                 <iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" 
                                     src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/112774699&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
                                 </iframe>
@@ -239,9 +238,9 @@
                 <article class="indent-p">
                     <h2 id="skill">Skills:</h2>
                     <div class="card mb-3">
-                        <div class="row g-1">
-                            <div class="col-md-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="img-fluid rounded-start py-3 px-5">
+                        <div class="row g-1 p-1">
+                            <div class="col-md-3 bg-light rounded">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="icon img-fluid rounded-start p-3 d-block mx-auto">
                                     <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                     <path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/>
                                 </svg>
@@ -261,9 +260,9 @@
                         </div>
                     </div>
                     <div class="card mb-3">
-                        <div class="row g-1">
-                            <div class="col-md-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="img-fluid rounded-start py-3 px-5">
+                        <div class="row g-1 p-1">
+                            <div class="col-md-3 bg-light">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="icon img-fluid rounded-start p-3 d-block mx-auto">
                                     <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                     <path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/>
                                 </svg>
@@ -283,9 +282,9 @@
                         </div>
                     </div>
                     <div class="card mb-3">
-                        <div class="row g-1">
-                            <div class="col-md-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="img-fluid rounded-start py-3 px-5">
+                        <div class="row g-1 p-1">
+                            <div class="col-md-3 bg-light">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon img-fluid rounded-start p-3 d-block mx-auto">
                                     <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                     <path d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"/>
                                 </svg>
@@ -305,9 +304,9 @@
                         </div>
                     </div>
                     <div class="card mb-3">
-                        <div class="row g-1">
-                            <div class="col-md-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="img-fluid rounded-start py-3 px-5">
+                        <div class="row g-1 p-1">
+                            <div class="col-md-3 bg-light">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="icon img-fluid rounded-start p-3 d-block mx-auto">
                                     <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                     <path d="M277.74 312.9c9.8-6.7 23.4-12.5 23.4-12.5s-38.7 7-77.2 10.2c-47.1 3.9-97.7 4.7-123.1 1.3-60.1-8 33-30.1 33-30.1s-36.1-2.4-80.6 19c-52.5 25.4 130 37 224.5 12.1zm-85.4-32.1c-19-42.7-83.1-80.2 0-145.8C296 53.2 242.84 0 242.84 0c21.5 84.5-75.6 110.1-110.7 162.6-23.9 35.9 11.7 74.4 60.2 118.2zm114.6-176.2c.1 0-175.2 43.8-91.5 140.2 24.7 28.4-6.5 54-6.5 54s62.7-32.4 33.9-72.9c-26.9-37.8-47.5-56.6 64.1-121.3zm-6.1 270.5a12.19 12.19 0 0 1-2 2.6c128.3-33.7 81.1-118.9 19.8-97.3a17.33 17.33 0 0 0-8.2 6.3 70.45 70.45 0 0 1 11-3c31-6.5 75.5 41.5-20.6 91.4zM348 437.4s14.5 11.9-15.9 21.2c-57.9 17.5-240.8 22.8-291.6.7-18.3-7.9 16-19 26.8-21.3 11.2-2.4 17.7-2 17.7-2-20.3-14.3-131.3 28.1-56.4 40.2C232.84 509.4 401 461.3 348 437.4zM124.44 396c-78.7 22 47.9 67.4 148.1 24.5a185.89 185.89 0 0 1-28.2-13.8c-44.7 8.5-65.4 9.1-106 4.5-33.5-3.8-13.9-15.2-13.9-15.2zm179.8 97.2c-78.7 14.8-175.8 13.1-233.3 3.6 0-.1 11.8 9.7 72.4 13.6 92.2 5.9 233.8-3.3 237.1-46.9 0 0-6.4 16.5-76.2 29.7zM260.64 353c-59.2 11.4-93.5 11.1-136.8 6.6-33.5-3.5-11.6-19.7-11.6-19.7-86.8 28.8 48.2 61.4 169.5 25.9a60.37 60.37 0 0 1-21.1-12.8z"/>
                                 </svg>
@@ -327,9 +326,9 @@
                         </div>
                     </div>
                     <div class="card mb-3">
-                        <div class="row g-5">
-                            <div class="col-md-3">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Y8wXRoEcwXqMuYND9FXg3H-tfZJfN4nOc5n8BOK0&s" class="img-fluid rounded-start py-3 ps-5" alt="C# logo">
+                        <div class="row g-1 p-1">
+                            <div class="col-md-3 bg-light">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Y8wXRoEcwXqMuYND9FXg3H-tfZJfN4nOc5n8BOK0&s" class="icon img-fluid rounded-start p-3 d-block mx-auto" alt="C# logo">
                             </div>
                             <div class="col-md-9">
                                 <div class="card-body">
@@ -348,8 +347,8 @@
 
                 <article>
                     <h2 id="contact">Contacts:</h2>
-                    <div class="row g-5 px-5">
-                        <div class="col-3 p-5">
+                    <div class="row g-5 px-5 mt-3">
+                        <div class="col-3 px-5">
                             <a href="https://web.facebook.com/rommel.minguez" target="_blank" title="facebook">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="min-width:50px;min-height:50px;">
                                     <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -357,7 +356,7 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="col-3 p-5">
+                        <div class="col-3 px-5">
                             <a href="https://twitter.com/RMingzx" target="_blank" title="twitter">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="min-width:50px;min-height:50px;">
                                     <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -365,7 +364,7 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="col-3 p-5">
+                        <div class="col-3 px-5">
                             <a href="https://github.com/RommelMinguez" target="_blank" title="github">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" style="min-width:50px;min-height:50px;">
                                     <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -373,7 +372,7 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="col-3 p-5">
+                        <div class="col-3 px-5">
                             <a href="https://myanimelist.net/profile/MingZx_mal" target="_blank" title="mal">
                                 <img src="https://image.myanimelist.net/ui/OK6W_koKDTOqqqLDbIoPAiC8a86sHufn_jOI-JGtoCQ" class="img-fluid" style="min-width:50px;min-height:50px;">
                             </a>
@@ -384,7 +383,7 @@
             <div class="col-3 mt-5" style="z-index:50;">
                 <nav class="section-nav sticky-top">
                     <ul class="list-unstyled">
-                        <li><a href="#about-me" class="text-decoration-none">About Me</a></li>
+                        <li><a href="#about-me" class="text-decoration-none">About&nbsp;Me</a></li>
                         <li><a href="#hobby" class="text-decoration-none">Hobbies</a></li>
                         <li><a href="#education" class="text-decoration-none">Education</a></li>
                         <li><a href="#skill" class="text-decoration-none">Skills</a></li>
@@ -394,6 +393,17 @@
                 </nav>
             </div>
         </div>
+
+        <div class="alert alert-info alert-dismissible p-5" id="showThis">
+            <button type="button" class="btn-close"></button>
+            <p>
+                <b>This is certificate doesn't have any real value, it can't be use as a proof for any job requirements. <br>
+                It might have no real value but for me, this is an achievement, a checkpoint, a proof for my self 
+                that there are progress on what I do. In short for me this certificate is like a game achievement.</b>
+            </p>
+            <img src="https://www.sololearn.com/Certificate/CT-0CPERQ06/png" id="cer" class="img-fluid rounded border border-dark border-2 mt-3">
+        </div>
+
         <footer class="container-fluid px-5 text-bg-dark" id="other">
             <p class="text-center">
                 <a href="#profile" class="btn btn-light mt-4"><b>Back to Top</b></a>
@@ -435,16 +445,6 @@
             </p><hr style="margin-bottom:0px;">
             <p style="color:grey;text-align:right;font-size:10px;" class="pb-2">2nd-year 1st-Semester, s.y. 2022 - 2023</p>
         </footer>
-
-        <div class="alert alert-info alert-dismissible p-5" id="showThis">
-            <button type="button" class="btn-close"></button>
-            <p>
-                <b>This is certificate doesn't have any real value, it can't be use as a proof for any job requirements. <br>
-                It might have no real value but for me, this is an achievement, a checkpoint, a proof for my self 
-                that there are progress on what I do. In short for me this certificate is like a game achievement.</b>
-            </p>
-            <img src="https://www.sololearn.com/Certificate/CT-0CPERQ06/png" id="cer" class="img-fluid rounded border border-dark border-2 mt-3">
-        </div>
 
         <script>
             var inp = document.getElementById("open-cer");
