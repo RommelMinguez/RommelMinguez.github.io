@@ -5,59 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-        <style>
-            .content {
-                padding-left: 10%;
-            }
-            .section-nav {
-                top: 80px;
-                cursor: pointer;
-            }
-            .section-nav li {
-                margin: 5px 0px;
-            }
-            .section-nav a {
-                padding: 5px 0px 5px 20px;
-                color: gray;
-            }
-            .section-nav a:hover {
-                color: skyblue;
-                font-weight: bold;
-                border-left: 2px solid skyblue;
-                padding-left: 18px;
-            }
-            .indent-p p {
-                text-indent: 1cm;
-            }
-            .skill_icon {
-                min-width: 100px;
-                min-height: 100px;
-                max-width: 200px;
-                max-height: 200px;
-            }
-            .contact_icon {
-                width:70px;
-                height:70px;
-            }
-            #profile {
-                box-shadow: 0px 2px 5px gray;
-            }
-            #showThis {
-                display:none;
-                position:fixed;
-                margin:auto;
-                top:100px;
-                width:70%;
-                height:70%;
-                top:15%;
-                left:15%;
-                z-index:100;
-                overflow:auto;
-            }
-            footer {
-                box-shadow: 0px -2px 5px gray;
-            }
-        </style>
+        <link href="additional_styles.css" rel="stylesheet">
     </head>
     <body>
         <div class="container-fluid text-bg-primary py-3 pt-2 " id="profile">
@@ -401,11 +349,11 @@
         <div class="alert alert-info alert-dismissible p-5" id="showThis">
             <button type="button" class="btn-close"></button>
             <p>
-                <b>This is certificate doesn't have any real value, it can't be use as a proof for any job requirements. <br>
+                <b>This certificate doesn't have any real value, it can't be use as a proof for any job requirements. <br>
                 It might have no real value but for me, this is an achievement, a checkpoint, a proof for my self 
                 that there are progress on what I do. In short for me this certificate is like a game achievement.</b>
             </p>
-            <img src="https://www.sololearn.com/Certificate/CT-0CPERQ06/png" id="cer" class="img-fluid rounded border border-dark border-2 mt-3">
+            <img src="https://www.sololearn.com/Certificate/CT-0CPERQ06/png" id="cer" class="img-fluid rounded border border-dark border-2 mt-3" alt="Sololearn Certificate (something went wrong, please reload this page">
         </div>
 
         <footer class="container-fluid px-5 text-bg-dark mt-5" id="other">
@@ -450,32 +398,6 @@
             <p style="color:grey;text-align:right;font-size:10px;" class="pb-2 mb-0">10/25/22 - 2nd-year 1st-Semester, s.y. 2022 - 2023</p>
         </footer>
 
-        <script>
-            var inp = document.getElementById("open-cer");
-            var win = document.getElementById("showThis");
-            var pic = document.getElementById("cer");
-
-            //inp.addEventListener("click", show);
-            win.addEventListener("click", hide);
-
-            var cerArr = [
-                "https://www.sololearn.com/Certificate/CT-0CPERQ06/png", 
-                "https://www.sololearn.com/Certificate/CT-FO2LFDE3/png",
-                "https://www.sololearn.com/Certificate/CT-W5KYVFGD/png",
-                "https://www.sololearn.com/Certificate/CT-CNHK5W1R/png",
-                "https://www.sololearn.com/Certificate/CT-MWZWPDJI/png"
-            ];
-            
-            function show(i) {
-                win.style.display = "block";
-                win.style.opacity = "0.95";
-                pic.title = "Sololearn Certificate";
-                pic.src = cerArr[i];
-            }
-
-            function hide() {
-                win.style.display = "none";
-            }
-        </script>
+        <script src="open_certificate.js"></script>
     </body>
 </html>

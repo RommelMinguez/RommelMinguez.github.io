@@ -1,0 +1,51 @@
+.content {
+    padding-left: 10%;
+}
+.section-nav {
+    top: 80px;
+    cursor: pointer;
+}
+.section-nav li {
+    margin: 5px 0px;
+}
+.section-nav a {
+    padding: 5px 0px 5px 20px;
+    color: gray;
+}
+.section-nav a:hover {
+    color: skyblue;
+    font-weight: bold;
+    border-left: 2px solid skyblue;
+    padding-left: 18px;
+}
+.indent-p p {
+    text-indent: 1cm;
+}
+.skill_icon {
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 200px;
+    max-height: 200px;
+}
+.contact_icon {
+    width:70px;
+    height:70px;
+}
+#profile {
+    box-shadow: 0px 2px 5px gray;
+}
+#showThis {
+    display:none;
+    position:fixed;
+    margin:auto;
+    top:100px;
+    width:70%;
+    height:70%;
+    top:15%;
+    left:15%;
+    z-index:100;
+    overflow:auto;
+}
+footer {
+    box-shadow: 0px -2px 5px gray;
+}
